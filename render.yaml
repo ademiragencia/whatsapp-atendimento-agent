@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: whatsapp-atendimento-agent
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 24
+      - key: DEEPSEEK_API_KEY
+        sync: false
+      - key: DEEPSEEK_BASE_URL
+        value: https://api.deepseek.com
+      - key: DEEPSEEK_MODEL
+        value: deepseek-v4-flash
+      - key: DEEPSEEK_THINKING
+        value: disabled
+      - key: GRAPH_API_VERSION
+        value: v25.0
+      - key: WHATSAPP_ACCESS_TOKEN
+        sync: false
+      - key: WHATSAPP_PHONE_NUMBER_ID
+        sync: false
+      - key: WHATSAPP_VERIFY_TOKEN
+        sync: false
+      - key: META_APP_SECRET
+        sync: false
+      - key: BUSINESS_NAME
+        value: Sua Empresa
+      - key: BEHAVIOR_PROMPT
+        sync: false
+      - key: KNOWLEDGE_BASE
+        sync: false
