@@ -1,0 +1,16 @@
+{
+  "name": "whatsapp-atendimento-agent",
+  "version": "1.0.0",
+  "description": "Agente de atendimento WhatsApp com DeepSeek",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
